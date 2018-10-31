@@ -167,11 +167,59 @@ h3 {
  height: 58vh
 }
 
-/* */
+/*Minimal Design Attempt*/
+.callout-container {
+    height: 100vh;
+
+    background: url("http://i65.tinypic.com/rjo02b.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
 
 
-/* */
+/*Images Modal*/
+.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
 
+.gallery:hover {
+    border: 1px solid #777;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
 
 /* */
 
