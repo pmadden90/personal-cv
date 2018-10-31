@@ -221,8 +221,10 @@ h3 {
     text-align: center;
 }
 
-/* */
-
+/*Button Colour*/
+.btn-lg {
+    color: #008080 !important;
+}
 
 /* */
 

@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="css/style.css">
 
 <body>
-    <nav class="navbar navbar-default">
+   <!-- <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
 
@@ -48,8 +48,8 @@
                 </ul>
 -->
 
-            </div>
-        </div>
+        <!--    </div>
+        </div>-->
     </nav>
    <div class="container-fluid callout-container">
         <div class="opaque-overlay">&nbsp;</div>
@@ -61,8 +61,10 @@
                     <hr class='block-divider block-divider--orange'>
                     <p class="lead">Frontend Developer</p>
                     <div class="row">
-                    <p ><button class="btn btn-lg btn--cta glyphicon glyphicon-envelope" data-toggle='modal' data-target='#contactModal'></button></p>
-                    <p ><button class="btn btn-lg btn--cta glyphicon glyphicon-folder-open" data-toggle='modal' data-target='#portfolioModal'></button></p>
+                    <div class="col-md-3"><button class="btn btn-lg glyphicon glyphicon-envelope" data-toggle='modal' data-target='#contactModal'></button></div>
+                    <div class="col-md-3"><button class="btn btn-lg glyphicon glyphicon-phone" data-toggle='modal' data-target='#mportfolioModal'></button></div>
+                    <div class="col-md-3"><button class="btn btn-lg glyphicon glyphicon-blackboard" data-toggle='modal' data-target='#dportfolioModal'></button></div>
+                    <div class="col-md-3"><button class="btn btn-lg glyphicon glyphicon-bullhorn" data-toggle='modal' data-target='#testimonialsModal'></button></div>
                     </div>
                 </section>
             </div>
@@ -70,71 +72,174 @@
         <!-- /.callout -->
 
 <!-- Contact Modal -->
-    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Getting in touch</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <input type="message" class="form-control" id="message" placeholder="Message">
+                    </div>
+                    <button type="submit" class="btn btn-success">Send message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mobile Portfolio Modal -->
+<div class="modal fade" id="mportfolioModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h4 class="modal-title" id="myModalLabel">Samples of work</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a target="_blank" href="http://i65.tinypic.com/25z47e8.jpg">
+    <img src="http://i65.tinypic.com/25z47e8.jpg" alt="First image" width="300" height="200">
+  </a>
+                        <div class="desc">First image</div>
+
+                        <a target="_blank" href="http://i68.tinypic.com/30agtgo.jpg">
+    <img src="http://i68.tinypic.com/30agtgo.jpg" alt="Second image" width="300" height="200">
+  </a>
+                        <div class="desc">Second image</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a target="_blank" href="http://i65.tinypic.com/34hdqir.jpg">
+    <img src="http://i65.tinypic.com/34hdqir.jpg" alt="Third image" width="300" height="200">
+  </a>
+                        <div class="desc">Third image</div>
+
+                        <a target="_blank" href="http://i67.tinypic.com/33m0m6s.jpg">
+    <img src="http://i67.tinypic.com/33m0m6s.jpg" alt="Fourth image" width="300" height="200">
+  </a>
+                        <div class="desc">Fourth image</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<!-- Desktop Portfolio Modal -->
+<div class="modal fade" id="dportfolioModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h4 class="modal-title" id="myModalLabel">Samples of work</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a target="_blank" href="http://i65.tinypic.com/25z47e8.jpg">
+    <img src="http://i65.tinypic.com/25z47e8.jpg" alt="First image" width="300" height="200">
+  </a>
+                        <div class="desc">First image</div>
+
+                        <a target="_blank" href="http://i68.tinypic.com/30agtgo.jpg">
+    <img src="http://i68.tinypic.com/30agtgo.jpg" alt="Second image" width="300" height="200">
+  </a>
+                        <div class="desc">Second image</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a target="_blank" href="http://i65.tinypic.com/34hdqir.jpg">
+    <img src="http://i65.tinypic.com/34hdqir.jpg" alt="Third image" width="300" height="200">
+  </a>
+                        <div class="desc">Third image</div>
+
+                        <a target="_blank" href="http://i67.tinypic.com/33m0m6s.jpg">
+    <img src="http://i67.tinypic.com/33m0m6s.jpg" alt="Fourth image" width="300" height="200">
+  </a>
+                        <div class="desc">Fourth image</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<!-- Testiomonials Modal -->
+    <div class="modal fade" id="testimonialsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Getting in touch</h4>
-                </div>
+                    <h4 class="modal-title" id="myModalLabel">Testimonials</h4>
+                
                 <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email" placeholder="Email">
-                            </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <input type="message" class="form-control" id="message" placeholder="Message">
-                        </div>
-                        <button type="submit" class="btn btn-success">Send message</button>
-                    </form>
+                    <div class="col-md-6">
+                 <div class="media-body">
+                     <div class="media-left ">
+                         <img src="http://i63.tinypic.com/2mwfmnm.jpg" class="img-circle media-object " height=100 width=100>
+                     </div>
+                     <div class="media-body ">
+                         <blockquote class="quote ">
+                             <p>I've worked with some great people over the years and Paul is up where with the best of them.</p>
+                             <footer>Anonymous <cite>Aberdeen City Council (Teacher) </cite></footer>
+                         </blockquote>
+                     </div>
+                 </div>
+                 <br>
+                 <div class="media-left">
+                     <img src="http://i67.tinypic.com/281v3va.jpg" class="img-circle media-object " height=100 width=100>
+                 </div>
+                 <div class="media-body ">
+                     <blockquote class="quote ">
+                         <p>Paul not only created a vibrant, engaging classroom but managed to spread this atmosphere across the whole school community.</p>
+                         <footer>Head Teacher on <cite>Retired Head Teacher</cite></footer>
+                     </blockquote>
+                 </div>
+             </div>
+                    <div class="col-md-6">
+                 <div class="media-body">
+                     <div class="media-left ">
+                         <img src="http://i63.tinypic.com/2mwfmnm.jpg" class="img-circle media-object " height=100 width=100>
+                     </div>
+                     <div class="media-body ">
+                         <blockquote class="quote ">
+                             <p>I've worked with some great people over the years and Paul is up where with the best of them.</p>
+                             <footer>Anonymous <cite>Aberdeen City Council (Teacher) </cite></footer>
+                         </blockquote>
+                     </div>
+                 </div>
+                 <br>
+                 <div class="media-left">
+                     <img src="http://i67.tinypic.com/281v3va.jpg" class="img-circle media-object " height=100 width=100>
+                 </div>
+                 <div class="media-body ">
+                     <blockquote class="quote ">
+                         <p>Paul not only created a vibrant, engaging classroom but managed to spread this atmosphere across the whole school community.</p>
+                         <footer>Head Teacher on <cite>Retired Head Teacher</cite></footer>
+                     </blockquote>
+                 </div>
+             </div>
                 </div>
             </div>
         </div>
     </div>
     
-<!-- Portfolio Modal -->
-    <div class="modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    
-                    <h4 class="modal-title" id="myModalLabel">Samples of work</h4>
-                </div>
-                <div class="modal-body">
-  <a target="_blank" href="fjords.jpg">
-    <img src="http://www.tompetty.com/sites/g/files/g2000007521/f/Sample-image10-highres.jpg" alt="Cinque Terre" width="300" height="200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="forest.jpg">
-    <img src="http://www.ricoh-imaging.co.jp/english/products/q-s1/ex/img/bod_mainImg_01.jpg" alt="Forest" width="300" height="200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="lights.jpg">
-    <img src="lights.jpg" alt="Northern Lights" width="300" height="200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-
-<div class="gallery">
-  <a target="_blank" href="mountains.jpg">
-    <img src="mountains.jpg" alt="Mountains" width="300" height="200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </div>
-
                     
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
