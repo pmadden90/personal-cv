@@ -71,6 +71,13 @@ a {
     color: #f5f5f5;
     text-decoration: none;
 }
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /*Navbar*/
 
 /*Headline*/
@@ -225,11 +232,15 @@ h3 {
 .btn-lg {
     color: #008080 !important;
 }
+b t n {
+  width: 20%;
+}
 
-/* */
 
 
-/* */
+/*Footer*/
+
+}
 
 
 /* */
